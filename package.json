@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "Megha",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-gridster": "^0.13.14",
+    "angular-ui-router": "^1.0.3",
+    "angular-utils-pagination": "^0.11.1",
+    "bootstrap": "^4.0.0",
+    "colresizable": "^1.6.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "jquery-ui": "^1.12.1",
+    "lite-server": "^2.3.0",
+    "ng-draggable": "^1.0.0",
+    "ng-dropdown": "^1.0.0",
+    "ngclipboard": "^2.0.0"
+  }
+}

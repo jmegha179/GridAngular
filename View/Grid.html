@@ -1,0 +1,174 @@
+<script type="text/javascript" src="node_modules\colresizable\colResizable-1.6.min.js">
+</script>
+
+<div class="container" style="border:2px solid black;border-radius:8px;margin-top:100px">
+    <div class="page-header">
+        <center style="margin-top:30px;color:#154360;font-family:Serif  " id="s1"><U>STUDENT DETAILS</U></center>
+    </div>
+    <div class="row" style="margin-top:40px">
+        <div class="col-md-6 col-xs-5  ">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label style="margin-left:10px" for="search">Search: </label>
+
+                    <input type="text" class="form-control" placeholder="search" name="search" ng-model="search" style="margin-left:5px;border-radius:8px;border:1px solid black"
+                    />
+                </div>
+            </form>
+        </div>
+        <div class="offset-md-4 offset-xs-4 offset-sm-4 col-md-2 col-xs-3 col-sm-2">
+            <button class="btn-success " id="add" ng-click="insert()">Add Row</button>
+        </div>
+    </div>
+    <div class="table-responsive" style="margin-top:20px" id="myDiv">
+        <table class=" table table-striped table table-bordered table table-condensed" id="sample" arrow-selector gridster="gridsterOpts" class="grid" oncontextmenu="return false;">
+            <thead>
+                <tr style="height:40px">
+                    <th ng-click="sort('id')">Id
+                        <i class="fa fa-sort" ng-show="sortBy=='id'"></i>
+                    </th>
+                    <th ng-click="sort('first_name')">First Name
+                        <i class="fa fa-sort" ng-show="sortBy=='first_name'"></i>
+                    </th>
+                    <th ng-click="sort('last_name')">Last Name
+                        <i class="fa fa-sort" ng-show="sortBy=='last_name'"></i>
+                    </th>
+                    <th ng-click="sort('DOB')">Date Of Birth
+                        <i class="fa fa-sort" ng-show="sortBy=='DOB'"></i>
+                    </th>
+                    <th ng-click="sort('Address')">Address
+                        <i class="fa fa-sort" ng-show="sortBy=='Address'"></i>
+                    </th>
+                    <th ng-click="sort('email')">Product Details
+                        <i class="fa fa-sort" ng-show="sortBy=='email'"></i>
+                    </th>
+                    <th style="width:220px">Action</th>
+                </tr>
+            </thead>
+            <tbody dir-paginate="x in name|orderBy:sortBy:reverse|filter:search|itemsPerPage:5" ng-drag="true" ng id="draggableAxis"
+                ng-style="draggedStyle" ng-drag-success="onDragComplete($event,$data)" ng-class="{'selected':$index ==selectedRow}"
+                ng-click="selectClicked(x,$index)">
+                <tr >
+                    <td data-ng-click="selectTableRow( $index ,x.id , true)"  class="clickableRow" title="Click to toggle collapse/expand day summaries for this store." ng-mousemove="selectTableRow( $index ,x.id , false)"
+                        ng-dblclick="selectTableRow( $index ,x.id , false)">
+                        <input type="text" class="form-control" ng-model="x.id" ng-if="editing && m == $index" />
+                        <span ng-if="!editing || !(editing && m == $index)">{{x.id}}</span>
+                    </td>
+
+                    <td  data-ng-click="selectTableRow( $index ,x.id , true)"  class="clickableRow" title="Click to toggle collapse/expand day summaries for this store."  ng-mousemove="selectTableRow( $index ,x.id , false)"
+                         ng-dblclick="selectTableRow( $index ,x.id , false)">
+                        <input type="text" class="form-control" value="x.first_name" ng-model="x.first_name" ng-if="editing && m == $index" onclick=""/>
+                        <span ng-if="!editing || !(editing && m == $index)">{{x.first_name}}</span>
+                    </td>
+                    <td class="clickableRow" title="Click to toggle collapse/expand day summaries for this store."  ng-mousemove="selectTableRow( $index ,x.id , false)"
+                        data-ng-click="selectTableRow( $index ,x.id , true)" ng-dblclick="selectTableRow( $index ,x.id , false)">
+                        <input type="text" class="form-control" ng-model="x.last_name" ng-if="editing && m == $index" />
+                        <span ng-if="!editing || !(editing && m == $index)">{{x.last_name}}</span>
+                    </td>
+                    <td class="clickableRow" title="Click to toggle collapse/expand day summaries for this store." ng-mousemove="selectTableRow( $index ,x.id , false)"
+                        data-ng-click="selectTableRow( $index ,x.id , true)" ng-dblclick="selectTableRow( $index ,x.id , false)">
+                        <input type="text" class="form-control" ng-model="x.DOB" ng-if="editing && m == $index" />
+                        <span ng-if="!editing || !(editing && m == $index)">{{x.DOB}}</span>
+                    </td>
+                    <td class="clickableRow" title="Click to toggle collapse/expand day summaries for this store."  ng-mousemove="selectTableRow( $index ,x.id , false)"
+                        data-ng-click="selectTableRow( $index ,x.id , true)" ng-dblclick="selectTableRow( $index ,x.id , false)">
+                        <input type="text" class="form-control" ng-model="x.Address" ng-if="editing && m == $index" />
+                        <span ng-if="!editing || !(editing && m == $index)">{{x.Address}}</span>
+                    </td>
+                    <td class="clickableRow" title="Click to toggle collapse/expand day summaries for this store."  ng-mousemove="selectTableRow( $index ,x.id , false)"
+                        data-ng-click="selectTableRow( $index ,x.id , true)" ng-dblclick="selectTableRow( $index ,x.id , false)">
+                        <input type="text" class="form-control" ng-model="x.email" ng-if="editing && m == $index" />
+                        <span ng-if="!editing || !(editing && m == $index)">{{x.email}}</span>
+                    </td>
+                    <td>
+                        <button class="btn  btn-primary btn btn-xs" ng-click="edit(x , $index , $event)" ng-if="!editing || !(editing && m == $index)"  ng-disabled="updateGroup.$invalid">Edit</button>
+                        <span ng-if="editing">
+                            <button type="submit" class="btn btn-xs btn-info" ng-click="save($index)" ng-if="m==$index">Save</button>
+                        </span>
+                        <button type="button" class="btn btn-danger bht bnt-xs" ng-click="removeItem($index) " value="Delete" ng-if="!editing || !(editing && m == $index)">Delete</button>
+
+                        <button class="btn btn-info" ngclipboard data-clipboard-text="{{x}}" value="Copy" ng-if="!editing || !(editing && m == $index)">Copy </button>
+
+                    </td>
+                </tr>
+                <tr ng-show="activeRow==x.id"  ng-if= "edit" ng-show="x.id != -1" style="background-color:white">
+                    <td colspan="7">
+                        <div class="table-responsive" style="margin-left:400px">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Subject-Code</th>
+                                        <th>Subject</th>
+                                        <th> Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="color:black">
+                                        <td>S-01</td>
+                                        <td>{{x.subject[0]}}</td>
+                                        <td>{{x.marks[0]}}</td>
+                                    </tr>
+                                    <tr style="color:black">
+                                        <td>S-02</td>
+                                        <td>{{x.subject[1]}}</td>
+                                        <td>{{x.marks[1]}}</td>
+                                    </tr>
+                                    <tr style="color:black">
+                                        <td>S-03</td>
+                                        <td>{{x.subject[2]}}</td>
+                                        <td>{{x.marks[2]}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+
+            <tr ng-if="add">
+
+                <td>
+                    <input type="text" class="form-control" ng-model="addMe.id" placeholder="enter Id" ng-hide="active" required>
+                    <span ng-if="active" ng-if="!add">{{addMe.id}}</span>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="addMe.first_name" ng-if="!active" placeholder="Enter firstname" required>
+                    <span ng-if="active" ng-if="!add">{{addMe.first_name}}</span>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="addMe.last_name" ng-if="!active" placeholder="Enter lastname" required>
+                    <span ng-if="active" ng-if="!add">{{addMe.last_name}}</span>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="addMe.DOB" ng-if="!active" placeholder="Enter DOB" required>
+                    <span ng-if="active" ng-if="!add">{{addMe.DOB}}</span>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="addMe.Address" ng-if="!active" placeholder="Enter address" required>
+                    <span ng-if="active" ng-if="!add">{{addMe.Address}}</span>
+                </td>
+                <td>
+                    <input type="text" class="form-control" ng-model="addMe.email" ng-if="!active" placeholder="Enter email" required>
+                    <span ng-if="active" ng-if="!add">{{addMe.email}}</span>
+                </td>
+                <td>
+                    <button class="btn  btn-primary" ng-click="edit(x , $index)" ng-if="active" ng-if="!add">Edit</button>
+                    <input type="submit" class="btn btn-xs btn-success" ng-click="save1()" ng-if="!active" value="Add" />
+                    <button type="button" class="btn btn-danger bht bnt-sm" ng-click="removeItem($index) " ng-if="active" ng-if="!add" value="Delete">Delete</button>
+                    <button type="button" class="btn btn-info  bht bnt-xs" ng-click="copy(x) " ng-if="active" ng-if="!add" value="Copy" ng-if="!editing || !(editing && m == $index)">Copy</button>
+                </td>
+            </tr>
+        </table>
+        <div style="float:right">
+            <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true">
+            </dir-pagination-controls>
+        </div>
+
+    </div>
+</div>
+<!-- <input ng-paste="count = count + 1" ng-init="count=0" value="Paste row here"  style="width:1120px;margin-left:400px;margin-top:30px"> -->
+<script>
+    $(function () {
+        $("table").colResizable();
+    });
+</script>

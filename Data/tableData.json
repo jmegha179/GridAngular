@@ -1,0 +1,300 @@
+{"items" :[{
+        "id": 1,
+        "first_name": "Odie",
+        "last_name": "Dumbleton",
+        "email": "odumbleton0@networksolutions.com",
+        "DOB": "2017-09-01",
+        "Address": "Warmbaths",
+        "marks":[80,90,75],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 2,
+        "first_name": "Laetitia",
+        "last_name": "Pettiford",
+        "email": "lpettiford1@amazon.co.jp",
+        "DOB": "2017-06-25",
+        "Address": "Ovsyanka",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 3,
+        "first_name": "Chantalle",
+        "last_name": "Tallent",
+        "email": "ctallent2@mozilla.org",
+        "DOB": "2017-06-12",
+        "Address": "Tyringe",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 4,
+        "first_name": "Cora",
+        "last_name": "Skidmore",
+        "email": "cskidmore3@goo.gl",
+        "DOB": "2017-09-05",
+        "Address": "Xinkai",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 5,
+        "first_name": "Dietrich",
+        "last_name": "Gilleon",
+        "email": "dgilleon4@sitemeter.com",
+        "DOB": "2017-11-05",
+        "Address": "Bungsuan",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 6,
+        "first_name": "Art",
+        "last_name": "Wigzell",
+        "email": "awigzell5@theguardian.com",
+        "DOB": "2017-12-28",
+        "Address": "Rucava",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 7,
+        "first_name": "Aubrie",
+        "last_name": "Sellen",
+        "email": "asellen6@theglobeandmail.com",
+        "DOB": "2017-07-22",
+        "Address": "Longxi",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 8,
+        "first_name": "Cairistiona",
+        "last_name": "Shrimplin",
+        "email": "cshrimplin7@cdbaby.com",
+        "DOB": "2017-08-20",
+        "Address": "Sorokino",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 9,
+        "first_name": "Pier",
+        "last_name": "Leversuch",
+        "email": "pleversuch8@google.de",
+        "DOB": "2018-01-02",
+        "Address": "Vilhena",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 10,
+        "first_name": "Ferd",
+        "last_name": "McNiff",
+        "email": "fmcniff9@etsy.com",
+        "DOB": "2018-03-04",
+        "Address": "Büzmeýin"
+    },
+    {
+        "id": 11,
+        "first_name": "Jenica",
+        "last_name": "Galloway",
+        "email": "jgallowaya@macromedia.com",
+        "DOB": "2017-12-20",
+        "Address": "Liangchahe",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 12,
+        "first_name": "Dannye",
+        "last_name": "Sheldrake",
+        "email": "dsheldrakeb@jalbum.net",
+        "DOB": "2018-01-10",
+        "Address": "Pavlovka",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 13,
+        "first_name": "Vivian",
+        "last_name": "Raison",
+        "email": "vraisonc@scientificamerican.com",
+        "DOB": "2018-02-08",
+        "Address": "Wailolong",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 14,
+        "first_name": "Davis",
+        "last_name": "Cordingly",
+        "email": "dcordinglyd@reddit.com",
+        "DOB": "2017-12-16",
+        "Address": "Gyumri",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 15,
+        "first_name": "Page",
+        "last_name": "Beavis",
+        "email": "pbeavise@salon.com",
+        "DOB": "2017-08-02",
+        "Address": "Dambulla",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 16,
+        "first_name": "Padriac",
+        "last_name": "Stirton",
+        "email": "pstirtonf@toplist.cz",
+        "DOB": "2018-01-19",
+        "Address": "Cempaka",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 17,
+        "first_name": "Sheppard",
+        "last_name": "Cussons",
+        "email": "scussonsg@ameblo.jp",
+        "DOB": "2017-04-28",
+        "Address": "Jackson",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 18,
+        "first_name": "Colene",
+        "last_name": "Chadwin",
+        "email": "cchadwinh@flickr.com",
+        "DOB": "2018-03-02",
+        "Address": "Chiguata",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 19,
+        "first_name": "Victoir",
+        "last_name": "Mullally",
+        "email": "vmullallyi@sitemeter.com",
+        "DOB": "2017-08-22",
+        "Address": "Valdemarsvik",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 20,
+        "first_name": "Helen",
+        "last_name": "Bellanger",
+        "email": "hbellangerj@nationalgeographic.com",
+        "DOB": "2017-05-04",
+        "Address": "Sakai",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 21,
+        "first_name": "Pandora",
+        "last_name": "Ducker",
+        "email": "pduckerk@stumbleupon.com",
+        "DOB": "2017-09-26",
+        "Address": "Minas",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 22,
+        "first_name": "Madison",
+        "last_name": "Roberson",
+        "email": "mrobersonl@umn.edu",
+        "DOB": "2018-01-23",
+        "Address": "Albania",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 23,
+        "first_name": "Bernardina",
+        "last_name": "Daniell",
+        "email": "bdaniellm@fda.gov",
+        "DOB": "2017-04-30",
+        "Address": "Arcos",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 24,
+        "first_name": "Jessamine",
+        "last_name": "Sheircliffe",
+        "email": "jsheircliffen@friendfeed.com",
+        "DOB": "2017-05-05",
+        "Address": "Sukhobezvodnoye",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 25,
+        "first_name": "Madonna",
+        "last_name": "Stevings",
+        "email": "mstevingso@economist.com",
+        "DOB": "2018-04-08",
+        "Address": "Fukuyama",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 26,
+        "first_name": "Koral",
+        "last_name": "Vibert",
+        "email": "kvibertp@nbcnews.com",
+        "DOB": "2017-12-27",
+        "Address": "Kuzhorskaya",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 27,
+        "first_name": "Darda",
+        "last_name": "Crowe",
+        "email": "dcroweq@ucoz.ru",
+        "DOB": "2017-10-26",
+        "Address": "Buenlag",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 28,
+        "first_name": "Olimpia",
+        "last_name": "MacCaffrey",
+        "email": "omaccaffreyr@themeforest.net",
+        "DOB": "2017-12-07",
+        "Address": "Banbalah",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 29,
+        "first_name": "Hobey",
+        "last_name": "Cressingham",
+        "email": "hcressinghams@cbslocal.com",
+        "DOB": "2018-04-09",
+        "Address": "Uzlovaya",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    },
+    {
+        "id": 30,
+        "first_name": "Melva",
+        "last_name": "Biddiss",
+        "email": "mbiddisst@oaic.gov.au",
+        "DOB": "2017-11-16",
+        "Address": "Mallow",
+        "marks":[89,85,60],
+        "subject" :["Maths","Physics","Chemistry"]
+    }
+]
+}
